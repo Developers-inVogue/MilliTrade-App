@@ -1,0 +1,111 @@
+
+
+body{
+    background-color: darkmagenta;
+}
+.you{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+
+}
+.why {
+    background-image: url(img/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+}
+h1,h2 {
+    text-align: center;
+}
+
+.quick {
+    background-color: cyan;
+    height: 200px;
+    width: 80vh;
+   
+}
+.quick,.safe,.rely{
+    margin: 10px;
+    border-radius: 10px ;
+}
+.rely {
+    background-color: lightsalmon;
+    height: 200px;
+    width: 80vh;
+   
+}
+.safe {
+    background-color: olivedrab;
+    height: 200px;
+    width: 80vh;
+  
+}
+header .name{
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    height: 40%;
+}
+
+a {
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.login button {
+    
+    background-color: aqua;
+    width: 10%;
+    border-radius: 30px;
+    margin: 10px;
+}
+button:hover {
+    background-color: darkred;
+    cursor: pointer;
+
+}
+.member-info {
+	margin: 15px 0;
+}
+
+.member-info .member-name {
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.member-info .member-title {
+	font-family: 'Nunito', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.member-info .social-links {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0px 5px;
+}
+.member-info .social-links .fa-facebook{
+	color:#3b5998 ;
+}
+.member-info .social-links .fa-instagram{
+	color:#f46f30 ;
+}
+.member-info .social-links .fa-twitter{
+	color:#1da1f2 ;
+}
+.member-info .social-links .fa-linkedin{
+	color: #007bb5;
+}
+
+img {
+    height: 30px;
+    width: 50px;
+}
