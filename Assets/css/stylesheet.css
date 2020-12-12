@@ -131,3 +131,13 @@ input[type=text] {
 .social-links .fa-linked-in{
 	color: #007bb5;
 }
+
+
+#footer{
+	background-color: black; 
+	position: absolute; 
+	width: 100%; 
+	display: flex;
+	padding-top: 30px
+
+}
