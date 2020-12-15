@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body style="background-color: black">
+<body style="background-color:#ffffff;">
 	<nav class="navbar navbar-expand-lg navbar-light bg-white">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -38,32 +38,153 @@
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
-	</nav> 
-	<div class="container">
-		<button style="height: 50px; width: auto; cursor: pointer; font-size: 24px; background: #ffffff; border-radius:20px; text-align: center;"><a href="#">LOG IN</a></button>
+	</nav>
+	<hr> 
+	<div  style="float: right;" >
+		<a href="login.html"><button id="logon" style="height:50px; width:auto; cursor:pointer;	font-size:x-large; border-radius:10px; text-align: center;	font-weight: bolder; color:blink;"  >LOG IN</button></a>
+		<style>
+			#logon {
+  				width: 100px;
+  				height: 100px;
+ 				background: red;
+  				position: relative;
+  				animation-name: login;
+  				animation-duration: 3s;  
+  				animation-fill-mode: forwards;
+  				animation-iteration-count: infinite;
+			}
+
+			@keyframes login {
+  				from {top: 0px;}
+  				to {top: 0px; background-color: blue;}
+			}
+		</style>
+		<p style="color: black;">Don't have an account? <span style="color: blue;"><a href="sign.html">Sign up</a></span></p>
 	</div>
-	<div class="container">
-		<h2 style="color:#EC18C2; font-family: all; font-style: oblique; text-align: center; ">ENTER RECEIVING ACCOUNT DETAILS</h2>
-		<form>
-			<label style="font-family: all; font-size: x-large; color:#FFFFFF; font-weight: bold; ">Name</label>
-			<input type="text" name="name" placeholder="eg: Ama" size="30%">
-		</form>
-		<h3 style="color:#AA8C3D">ACCOUNT TYPE</h3>
-		<div class="container">
-			<button style="height: auto; width: auto; cursor: pointer; font-size:x-large; background:#FF2700; border-radius:20px; text-align: center; font-weight: bolder; font color: black;"><a href="receive_momo.html">MOMO</a></button>
-			<label style="color: #FFFFFF;">BANK</label>
-			<a href="receive_bank.html"><input type="checkbox"  name="bank"></a>
+
+	<div style="margin-left: 150px; float: left; margin-top:30px;">
+		<!-- CURRENCY-CONVERTER.ORG.UK CURRENCY CONVERTER 2 START -->
+		<div style="width:100%;margin:0;padding:0;border:1px solid #000000;background:#FFFFFF; text-align: center;">
+			<div style="width:100%;text-align:center;padding:2px 0px;background:#190752;font-family:arial;font-size:11px;color:#FFFFFF;font-weight:bold;vertical-align:middle;">HOW MUCH DO YOU HAVE?</div>
+			<div style="padding:0px;">
+				<script type="text/javascript">	
+					var dcf = 'GBP';
+					var dct = 'XOF';
+					var c = 'no';
+					var fc = '190752';
+					var lc = '190752';
+					var bdr = '000000';
+					var mbg = 'FFFFFF';
+					var mbg2 = '190752';
+					var ac = '0F0C66';
+					var ahc = 'EEEEEE';
+					var cfc = '350024';
+					var cbdc = '000000';
+					var cbgc = 'FFFFFF';
+					var ifc = 'E2E6E1';
+					var ibdc = '000000';
+					var ibgc = '190752';
+					var tz = 'userset';
+				</script><script type="text/javascript" src="https://www.currency-converter.org.uk/widget/CCUK-CC2-1.php"></script>
+			</div>
 		</div>
-		<p style="color: #F80821; font-size: all; font-size: smaller;" >*MOMO ACCEPTS ONLY LOCAL CURRENCY</p>
-		<svg width=100% height="1">
-			<line style="color:#FFFFFF">
-		</svg>
+<!-- CURRENCY-CONVERTER.ORG.UK CURRENCY CONVERTER LIVE END -->
+
+		<div class="details" style="background-color:#F2E0C9; text-align: center;  margin-top:50px; ">
+			<h2 style="color:blue; font-family:self deception regular;  text-align:center; font-weight: bolder;">ENTER RECEIVING ACCOUNT DETAILS</h2>
+			<form>
+				<label style="font-family:arial; font-size:30px; color:black; font-weight: bolder; ">Name</label>
+				<input type="text" name="name" placeholder="eg: Ama" size="50px" required>
+			</form>
+			<h3 style="color:green; text-align:center; font-weight: bolder; font-family:century Gothic; font-style:oblique;">ACCOUNT TYPE</h3>
+			<div class="container">
+			
+				<button onclick="payment()" style="height: auto; width: auto; cursor: pointer; font-size:x-large; background:#CFF6AC; border-radius:20px; text-align: center;"><a href="receive_momo.html" style="color: black; text-align: center; font-weight: bolder; font-size:x-large;">MOMO</a></button>
+				<button   style="height: auto; width: auto; cursor: pointer; background:#CFF6AC; border-radius:20px; "><a href ="receive_bank.html" style="color: black; text-align: center; font-weight: bolder; font-size:x-large;">BANK</a></button>
+			</div>	
+			<p style="color: #F80821; font-size: all; font-size: smaller;" >*MOMO ACCEPTS ONLY LOCAL CURRENCY</p>	
+		</div>
+		
+	<hr>
+	<h4>DID YOU KNOW <span style="color: black;">MilliTrade</span> is the best forex exchange app?<button style="background-color:cyan; border-radius:10px;"><a href="about.html" style="color: black; text-align: center; font-weight: bolder; font-size:x-large;" >Check this</a></button></h4>
+
+
+	<style>
+		body {
+			font-family: self deception regular;
+			margin: 50px;
+			color: blue;
+		}
+
+		h4 {
+			animation: move 3s;
+			-webkit-animation: move 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes move {
+			from {
+				margin-left: 100%;
+				width: 300%; 
+			}
+
+			to {
+				margin-left: 0%;
+				width: 100%;
+			}
+		}
+
+		@-webkit-keyframes move {
+			from {
+				margin-left: 100%;
+				width: 300%; 
+			}
+
+			to {
+				margin-left: 0%;
+				width: 100%;
+			}
+		}
+
+	</style>
+	<hr>
 	</div>
 	
-	<div class="container" style="float:right;">	
-		<button style="height: 50px; width: 500px; cursor: pointer; font-size: 24px; background: #ffffff; border-radius:20px; text-align: center; "><a href="#">PROCEED TO EXCHANGE</a></button>
-	</div>	
-	<button style="height: 50px; width: 200px; cursor: pointer; font-size: 24px; background: blue; border-radius:20px; text-align: center; object-position:center;">LIVE CHAT</button>
+	
+		
+	<div class="container" style="display: flex;  margin-top: 100px;"> 
+	<hr>	
+		<figure style="margin-top: 30px"> <h4 style=" font-weight: bold; margin-left: 150px; text-align:right; font-style: bold; color: blue; font-family: self deception regular; float: right; vertical-align: center;  margin-top: 70px">EXCHANGE AND SEND MONEY QUICKLY<br><br>JUST WITH YOUR PHONE OR COMPUTER.</h4></figure> 
+
+		<style> 
+		figure {
+  			width: 100%;
+  			height: 300px;
+  			background-repeat: no-repeat;
+  			background-image: url(Assets/image/lafon.jpg);
+ 			position: relative;
+  			animation-name: run;
+  			animation-duration: 5s;  
+  			animation-fill-mode: both;
+  			animation-iteration-count: infinite;
+  			animation-direction: forwards;
+		}
+
+			@keyframes run {
+  				from {left: 0px;}
+  				to {left: 0px; background-image: url(Assets/image/build.jpg);} 
+  				
+  			}
+
+	</style>
+			
+	</div>
+	<hr>
+	
+
+	
+	
+	
 	
 
 </body>

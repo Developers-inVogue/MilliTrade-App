@@ -1,10 +1,8 @@
 
 
-body{
-    background-color: darkmagenta;
-}
+
 .you{
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,14 +14,14 @@ body{
     background-image: url(img/download\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70px;
+    height: 5px;
 }
-h1,h2 {
+h1,h2 h3 {
     text-align: center;
 }
 
 .quick {
-    background-color: cyan;
+    background-color:darksalmon;
     height: 200px;
     width: 80vh;
    
@@ -33,13 +31,13 @@ h1,h2 {
     border-radius: 10px ;
 }
 .rely {
-    background-color: lightsalmon;
+    background-color: silver;
     height: 200px;
     width: 80vh;
    
 }
 .safe {
-    background-color: olivedrab;
+    background-color: #e8f044;
     height: 200px;
     width: 80vh;
   
@@ -66,8 +64,8 @@ a {
     border-radius: 30px;
     margin: 10px;
 }
-button:hover {
-    background-color: darkred;
+ button:hover {
+    background-color: rgba(177, 164, 164, 0.705);
     cursor: pointer;
 
 }
@@ -105,7 +103,17 @@ button:hover {
 	color: #007bb5;
 }
 
-img {
-    height: 200px;
-    width: 200px;
+ .team-picture img {
+    height: 250px;
+    width: 80%;
+  
+}
+ .team-picture img:hover{
+    box-shadow: #dbc6eb 5px 5px 5px 5px;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+*{
+    font-family: century Gothic;
 }

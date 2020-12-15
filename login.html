@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <link rel="stylesheet" href="Assets/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
 </head>
 <body>
-    <div class="container" style="width: 100%; height: 100%">
-      <form action="action_page.php" method="post" class="form">
-        <div class="imgcontainer">
-         <a href="about.html" ><img src="Assets/image/logo.jpg" style="height: 50px; width: 80px; border-radius: 20px;"></a>
-        </div>
-      
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember">Remember me
-          </label>
-        </div>
-      
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
+
+  <div class="login">
+    <h1>Login Details</h1>
+    <form method="post" action="">
+      <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+      <p><input type="password" name="password" value="" placeholder="Password"></p>
+      <p class="remember_me">
+        <label>
+          <input type="checkbox" name="remember_me" id="remember_me" checked>
+          Remember me 
+        </label>
+      </p>
+      <p class="submit"><input type="submit" name="commit" value="Login"></p>
+    </form>
+  </div>
+  
+  <div class="login-help">
+    <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+  </div>
 </body>
 </html>
