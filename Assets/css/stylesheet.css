@@ -1,7 +1,7 @@
 .navbar {
 	background-color: silver;
 	animation-name: example;
-	animation-duration: 4s;
+	animation-duration: 7s;
 	animation-iteration-count: infinite;
 	padding: 30px 30px;
 	z-index: 1;
@@ -11,7 +11,7 @@
 @keyframes example {
 	0% {background-color: silver;}
 	25% {background-color: teal;}
-	50% {background-color: gold;}
+	50% {background-color: antiquewhite;}
 	100% {background-color: transparent;}
 }
 .navbar .navbar-brand {
@@ -37,6 +37,10 @@
     line-height: 1;
     border: 1px solid #ffffff;
     border-radius: .25rem;
+}
+
+.nav-link{
+	color: yellow;
 }
 /* Heading Section */
  /*.heading{
@@ -125,6 +129,7 @@ input[type=text] {
 
 .social-links .fa-facebook{
     color: #3b5998;
+    
 }
 
 .social-links .fa-instagram{
@@ -143,9 +148,8 @@ input[type=text] {
 
 
 #footer{
-	background-color: black; 
-	margin-left: 50px
-	position: absolute; 
+	background-image: url(../images/secure.jpg); 
+	margin-left: 50px 
 	width: 100%; 
 	display: flex;
 	padding-top: 30px;

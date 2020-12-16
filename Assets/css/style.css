@@ -11,7 +11,7 @@
 
 }
 .why {
-    background-image: url(img/download\ \(1\).jpg);
+    background-image: url(..images/download\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 5px;
@@ -104,8 +104,8 @@ a {
 }
 
  .team-picture img {
-    height: 250px;
-    width: 80%;
+    height: 200px;
+    width: 60%;
   
 }
  .team-picture img:hover{
