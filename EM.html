@@ -30,6 +30,7 @@
 		<img src="Assets/images/logo.jpg" style="height: 80px; width: auto; margin-left: 0px; padding: 0px;">
 
 
+
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -54,32 +55,11 @@
 	</nav> 
 	<hr> 
 
-	<div  style="float: right;" >
-		<a href="login.html"><button id="logon" style="height:40px; width:auto; cursor:pointer;	font-size:x-large; border-radius:5px; text-align: center;	font-weight: bolder; color:blink;"  >LOG IN</button></a>
-		<style>
-			#logon {
-  				width: 100px;
-  				height: 100px;
- 				background: red;
-  				position: relative;
-  				animation-name: login;
-  				animation-duration: 5s;  
-  				animation-fill-mode: forwards;
-  				animation-iteration-count: infinite;
-			}
-
-			@keyframes login {
-  				from {top: 0px;}
-  				to {top: 0px; background-color: transparent;}
-			}
-		</style>
-		<p style="color: black;">Don't have an account? <span style="color: blue;"><a href="sign.html">Sign up</a></span></p>
-	</div>
-
-	<div style="margin-left: 150px; float: left; margin-top:30px;">
+	<div>
+	<div style=" float: left; margin-top:30px;">
 		<!-- CURRENCY-CONVERTER.ORG.UK CURRENCY CONVERTER 2 START -->
-		<div style="width:100%;margin:0;padding:0;border:1px solid #000000;background:#FFFFFF; text-align: center;">
-			<div style="width:100%;text-align:center;padding:2px 0px;background:#190752;font-family:arial;font-size:11px;color:#FFFFFF;font-weight:bold;vertical-align:middle;">HOW MUCH DO YOU HAVE?</div>
+		<div style="float: left; width:248px; margin-top: 50px; padding:0;border:1px solid #000000;background:#FFFFFF; text-align: center;">
+			<div style="width: 248px; text-align:center;padding:2px 0px;background:#190752;font-family:arial;font-size:20px;color:#FFFFFF;font-weight:bold;vertical-align:middle;">HOW MUCH DO YOU HAVE?</div>
 			<div style="padding:0px;">
 				<script type="text/javascript">	
 					var dcf = 'GBP';
@@ -103,20 +83,34 @@
 			</div>
 		</div>
 <!-- CURRENCY-CONVERTER.ORG.UK CURRENCY CONVERTER LIVE END -->
+	</div>
+	
 
-		<div class="details" style="background-color:#F2E0C9; text-align: center;  margin-top:50px; ">
-			<h2 style="color:blue; font-family:self deception regular;  text-align:center; font-weight: bolder;">ENTER RECEIVING ACCOUNT DETAILS</h2>
-			<form>
-				<label style="font-family:arial; font-size:30px; color:black; font-weight: bolder; ">Name</label>
-				<input type="text" name="name" placeholder="eg: Ama" size="50px" required>
+		<div class="details" style="background-image: url(Assets/image/b6.jpg); background-repeat: no-repeat; width:1600px; height:400px; background-blend-mode: color-burn; margin-top: 10px; padding: 0px; margin-left: 250px; text-align: center; background-blend-mode:color-burn; ">
+			<h2 style="color:white; font-family:self deception regular;  text-align:left; font-weight: bolder; padding-top: 50px; margin-left:150px; font-size: 40px; ">ENTER RECEIVING ACCOUNT DETAILS</h2>
+			<form style="text-align: center; margin-right: 600px; margin-top: 40px;">
+				<label style="font-family: self deception regular; font-size: xx-large; color:white; font-weight: bold; text-align: left; ">Name</label>
+				<input type="text" name="name" placeholder="Betty Williams" size="50px" required>
 			</form>
-			<h3 style="color:green; text-align:center; font-weight: bolder; font-family:century Gothic; font-style:oblique;">ACCOUNT TYPE</h3>
-			<div class="container">
 			
-				<button onclick="payment()" style="height: auto; width: auto; cursor: pointer; font-size:x-large; background:#CFF6AC; border-radius:20px; text-align: center;"><a href="receive_momo.html" style="color: black; text-align: center; font-weight: bolder; font-size:x-large;">MOMO</a></button>
-				<button   style="height: auto; width: auto; cursor: pointer; background:#CFF6AC; border-radius:20px; "><a href ="receive_bank.html" style="color: black; text-align: center; font-weight: bolder; font-size:x-large;">BANK</a></button>
-			</div>	
-			<p style="color: #F80821; font-size: all; font-size: smaller;" >*MOMO ACCEPTS ONLY LOCAL CURRENCY</p>	
+			<div class="container" style=" margin-right: 3500px; align-content: center; ">
+				<h3 style="color:white; font-weight: bolder; font-family:self deception regular; margin-top: 70px; font-size: 30px ">ACCOUNT TYPE</h3>
+			
+				<button onclick="payment()" style="height: auto; width: auto; cursor: pointer; font-size:x-large; background:black; border-radius:20px; text-align: center;"><a href="receive_momo.html" style="color: white; text-align: center; font-weight: bolder; font-size:x-large;">MOMO</a></button>
+				<button   style="height: auto; width: auto; cursor: pointer; background:black; border-radius:20px; "><a href ="receive_bank.html" style="color: white; text-align: center; font-weight: bolder; font-size:x-large;">BANK</a></button>
+				<p style="color: red; ; font-size: large; font-weight: bolder;" >*MOMO ACCEPTS ONLY LOCAL CURRENCY</p>
+			</div>		
+		</div>
+
+		<div  style="float: right;" >
+		<a href="login.html"><button id="logon" style="height:50px; width:auto; cursor:pointer;	font-size:x-large; border-radius:10px; text-align: center;	font-weight: bolder; color: orange;" class="btn" >LOG IN</button></a>
+		<style>
+			.btn:hover{
+				background-color: blue;
+				color:black;
+			}
+		</style>
+		<p style="color: black;">Don't have an account? <span style="color: blue;"><a href="sign.html">Sign up</a></span></p>
 		</div>
 		
 	<hr>
