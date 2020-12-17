@@ -1,11 +1,9 @@
-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Militrade forex bureau</title>
 	<link rel="stylesheet" type="text/css" href="Assets/css/stylesheet.css">
 	<link href="Assets/fonts/css/all.css" rel="stylesheet"> 
-
-	<!-- The google font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -31,6 +29,8 @@
 	</script>
 	<!--  END stardevelop.com Live Help Messenger Code - Copyright - NOT PERMITTED TO MODIFY COPYRIGHT LINE / LINK //-->
 
+
+
 </head>
 
 <body style="background-color: #f8f9fa;">
@@ -55,17 +55,20 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html" style="color:white;">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="about.html">About Us</a>
+					<a class="nav-link" href="about.html" style="color:white;">About Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="EM.html">Exchange Money</a>
+					<a class="nav-link" href="EM.html" style="color:white;" >Exchange Money</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="learnmore.html">Tutorial</a>
+					<a class="nav-link" href="tutorial.html" style="color:white;" >Tutorial</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html" style="color:white;" >Login</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -74,247 +77,250 @@
 			</form>
 		</div>
 	</nav> 
-	<div class="overlay">
-		<img src="Assets/images/background.jpg" style="height: 300px; width:100%">
+	
+	
+
+	
+	<!-- TradingView Widget BEGIN -->
+	<div class="tradingview-widget-container">
+		<div class="tradingview-widget-container__widget"></div>
+		<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+		<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+			{
+				"symbols": [
+				{
+					"proName": "FOREXCOM:SPXUSD",
+					"title": "S&P 500"
+				},
+				{
+					"proName": "FOREXCOM:NSXUSD",
+					"title": "Nasdaq 100"
+				},
+				{
+					"proName": "FX_IDC:EURUSD",
+					"title": "EUR/USD"
+				},
+				{
+					"proName": "BITSTAMP:BTCUSD",
+					"title": "BTC/USD"
+				},
+				{
+					"proName": "BITSTAMP:ETHUSD",
+					"title": "ETH/USD"
+				}
+				],
+				"showSymbolLogo": true,
+				"colorTheme": "light",
+				"isTransparent": false,
+				"displayMode": "adaptive",
+				"locale": "en"
+			}
+		</script>
+	</div>
+	<!-- TradingView Widget END -->
+
+
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="Assets/images/timesaving.jpeg" style="width:100%">
+			<div class="text">Save time for yourself</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="Assets/images/happy.jpeg" style="width:100%">
+			<div class="text">At ease, safe, from home</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="Assets/images/asian.jpeg" style="width:100%">
+			<div class="text">Transfer money securely</div>
+		</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
 	</div>
 
-	<hr>
-	<h4 style="color: blue; text-align: center;">Welcome to MilliTrade, where you can be rest assured of a swift and reliable transaction</h4>
+	<script>
+		var slideIndex = 0;
+		showSlides();
 
-
-	<!-- <style>
-		body {
-			font-family: self deception regular;
-			margin: 50px;
-			color: blue;
-		}
-
-		h4 {
-			animation: move 3s;
-			-webkit-animation: move 5s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes move {
-			from {
-				margin-left: 100%;
-				width: 300%; 
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
 			}
-
-			to {
-				margin-left: 0%;
-				width: 100%;
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 6000);
 			}
-		}
-
-		@-webkit-keyframes move {
-			from {
-				margin-left: 100%;
-				width: 300%; 
-			}
-
-			to {
-				margin-left: 0%;
-				width: 100%;
-			}
-		}
-
-	</style> -->
-	<hr>
-
-	<div class="container" style="height: auto; display: flex;margin-top: 20px">
-		<div>
-			
-			<a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" data-widget-bg-color="#9eb3fb" data-show-image data-width="1500" data-height="400" data-show-date data-title-font-size="18" data-intro-font-size="16" data-category="news" data-section="all" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> <span style="color:#999999;display:inline-block;margin-top:10px;font-size:12px;">Powered By </span> <img style="width:87px; height:14px;" src="https://www.fxempire.com/logo-full.svg" alt="FX Empire logo" /> </a> <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
-
-			
-		</div>
+		</script>
 
 
-		<div class="wrapper">
-			<button type="button" style="width:100%;">See Current Rates</button> 
-			<!-- EXCHANGERATES.ORG.UK LIVE FOREX RATES TABLE START -->
-			<!-- FOREIGNEXCHANGE.ORG.UK FOREIGN EXCHANGE RATES TABLE v2 START -->
-			<link rel="stylesheet" type="text/css" href="https://www.foreignexchange.org.uk/widget/FE-FERT2-css.php?w=300&nb=10&bdrc=CBCBCB&mbg=&fc=000000&tc=1280D0" media="screen" />
-			<div id="fefert2">
-				<div id="fefert2-widget"></div>
-				<div id="fefert2-infolink">Source: <a rel="nofollow" href="https://www.foreignexchange.org.uk/" target="_new" title="ForeignExchange.org.uk">ForeignExchange.org.uk</a></div>
-				<script type="text/javascript">	
-					var tz = 'userset';
-					var w = '300';
-					var mc = 'GBP';
-					var nb = '10';
-					var c1 = 'USD';
-					var c2 = 'EUR';
-					var c3 = 'AUD';
-					var c4 = 'JPY';
-					var c5 = 'INR';
-					var c6 = 'CAD';
-					var c7 = 'ZAR';
-					var c8 = 'NZD';
-					var c9 = 'SGD';
-					var c10 = 'CNY';
-					var bc = 'Base Currency';
-					var lc = '1280D0';
-					var bdrc = 'CBCBCB';
-					var t = 'Foreign Exchange Today';
-					var tc = '1280D0';
-					var fc = '000000';
-
-					var ccHost = (("https:" == document.location.protocol) ? "https://www." : "http://www.");
-					document.write(unescape("%3Cscript src='" + ccHost + "foreignexchange.org.uk/widget/FE-FERT2-1.php' type='text/javascript'%3E%3C/script%3E"));
-				</script>
-			</div>
-			<!-- FOREIGNEXCHANGE.ORG.UK FOREIGN EXCHANGE RATES TABLE v2 END -->
-
-		</div>
-
+		<hr>
+		<h4 style="color: blue; text-align: center;">Welcome to MilliTrade, where you can be rest assured of a swift and reliable transaction</h4>
 		<hr>
 
 
-	</div>
+		<div class="how to" style="position: relative; " >
+			<img src="Assets/images/download.jfif" style="width: 100%; height: 200px;">
 
-	<div class="container" style="display: flex; margin-top: 80px; margin-bottom: 30px;">
-		<div class="currency converter">
-			<button type="button" style="background: lightblue; width: 100%">Convert Money</button>
-			<div align="center" style="margin: 0px; padding: 0px; border: 2px solid rgb(136, 136, 136); width: 500px; background-color: rgb(24, 227, 226);"><div align="center" style="width: 100%; border-bottom: 1px solid rgb(136, 136, 136); margin: 0px; padding: 0px; text-align: center; color: rgb(68, 30, 200); background-color: rgb(204, 204, 204);"><a class="Vlabel" href="https://fx-rate.net/calculator/" style="text-decoration: none; font-size: 12px; font-weight: bold; text-align: center; font-family: Arial; margin-bottom: 6px; color: rgb(68, 30, 200);">Currency Calculator</a></div><script type="text/javascript" src="https://fx-rate.net/converter.php?layout=vertical&amount=1000&tcolor=441ec8&default_pair=USD/EUR"></script></div>
+			<div class="centered" style="position: absolute;transform: translate(-50%, -50%); top: 50%;
+			left: 50%">
+			<div class="title" style="
+			top: 50%;
+			left: 50%;
+			">
+			<h1 style="color: #fff; ;
+			font-size:40px ;">How it works</h1>
 		</div>
 
+		<div class="button" style=" 
+		top: 62%;
+		left: 50%; color: #333;background-color: #fff; border-color: #ccc
+		;">
+		<a href="#" class="btn">WATCH VIDEOS</a>
+		<a href="learnmore.html" class="btn">LEARN MORE</a>
 
+	</div>
+</div>
+</div>
+
+
+
+<hr>
+
+<!--Currency Converter widget by FreeCurrencyRates.com -->
+
+<div id='gcw_mainFKJXZMNjY' class='gcw_mainFKJXZMNjY'></div>
+<a id='gcw_siteFKJXZMNjY' href='https://freecurrencyrates.com/en/'>FreeCurrencyRates.com</a>
+<script>function reloadFKJXZMNjY(){ var sc = document.getElementById('scFKJXZMNjY');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFKJXZMNjY';sc.src = 'https://freecurrencyrates.com/en/widget-horizontal-editable?iso=USD-EUR-GBP-JPY-CNY-GHS&df=1&p=FKJXZMNjY&v=fits&source=fcr&width=900&width_title=300&firstrowvalue=1&thm=A6C9E2,FCFDFD,4297D7,5C9CCC,FFFFFF,C5DBEC,FCFDFD,2E6E9E,000000&title=Currency%20Converter&tzo=0';var div = document.getElementById('gcw_mainFKJXZMNjY');div.parentNode.insertBefore(sc, div);} reloadFKJXZMNjY(); </script>
+<!-- put custom styles here: .gcw_mainFKJXZMNjY{}, .gcw_headerFKJXZMNjY{}, .gcw_ratesFKJXZMNjY{}, .gcw_sourceFKJXZMNjY{} -->
+<!--End of Currency Converter widget by FreeCurrencyRates.com -->
+
+<hr>
+
+
+
+<div class="container" style="display: flex;">
+	
+
+	<!-- TradingView Widget BEGIN -->
+	<div class="tradingview-widget-container" style="margin-right: 40px">
+		<b><h4 style="text-align: center; font-family: self deception regular; color: black;">Forex Cross Rates</h4></b>
+		<div class="tradingview-widget-container__widget"></div>
+		<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Exchange Rates</span></a> by TradingView</div>
+		<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+			{
+				"width": "100px",
+				"height": "100%",
+				"currencies": [
+				"EUR",
+				"USD",
+				"JPY",
+				"GBP",
+				"CHF",
+				"AUD",
+				"CAD",
+				"NZD",
+				"CNY",
+				"TRY",
+				"SEK",
+				"NOK",
+				"DKK",
+				"ZAR",
+				"HKD",
+				"SGD",
+				"THB",
+				"MXN",
+				"IDR",
+				"KRW",
+				"PLN"
+				],
+				"isTransparent": false,
+				"colorTheme": "dark",
+				"locale": "en"
+			}
+		</script>
+	</div>
+
+<div>
+	<iframe src="https://informers.instaforex.com/forex_photonews/run/w=500&limit=5&fn=h&bh=311c91_1e0505_ffffff&bf=363636_454545_FFFFFF&pg=454545_454545_FFFFFF&bc=FFFFFF&lc=0f0f0f&fc=1f1f1f&brc=3d3d3d&bnc=ffffff&br=0_0_0_0&part_code=" width="300" height="480" frameborder="0" scrolling="no"></iframe>
+</div>
+
+
+</div>
+<hr>
+
+
+<footer id="footer">
+
+	<div class="short-links" style="float: left; text-align: center; width: 400px; height: 100%; color: white;font-family: century Gothic"> <h3>Quick Links</h3>	
+		<a class="nav-link" href="index.html">Home</a>
+		<a class="nav-link" href="about.html">About Us</a>
+		<a class="nav-link" href="EM.html">Exchange Money</a>
+		<a class="nav-link" href="tutorial.html">Tutorial</a>
+		<a class="nav-link" href="#">News</a>
+		<a class="nav-link" href="login.html">Login</a>
+
+
+		<div class="container" style="color: white;"><h3>Follow Us</h3>
+			<div class="social links" style="">
+				<a class="social-links" href="#"><i class="fab fa-facebook"></i></a>
+				<a class="social-links" href="#"><i class="fab fa-instagram"></i></a>
+				<a class="social-links" href="#"><i class="fab fa-twitter"></i></a>
+				<a class="social-links" href="#"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="partners" style="color: white; width: 500px; height: 50px">	
+		<h3 style="font-family: century Gothic;">Our Partners</h3>
+		<div><img src="Assets/images/giz.jpeg" style="width: 150px; height: 80px;"></div><br>
+		<div><img src="Assets/images/div.jpeg" style="width: 150px; height: 80px;"></div>	
+
+	</div>
+
+
+
+	<div class="form" style=" color: yellow">
+		<h3 style="color: white; text-align: center; font-family: century Gothic">CONTACT US</h3>
 		<div>
+			<form action="action_page.php">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname"name="firstname" placeholder="Your name...">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name...">
+				<label for="Email">Email</label>
+				<input type="text" id="Email"name="Email" placeholder="Your Email...">
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something..." style="height: 80px;"></textarea>
+				<input type="submit" value="Submit">
+			</form>	
+		</div><hr>
 
-			<div type="button" style="text-align: center; font-family: century Gothic"> <h5><b>Login to begin your transaction</b></h5></div>
-			<form action="action_page.php" method="post">
+        <p style="text-align: center; color: white;">Copyright©2020-millitrade</p>
 
-				<div class="container"style="box-shadow: 5px 10px #BAB9FC; border-style: groove; margin-left: 20px" >
-
-					<label for="uname"><b>Username</b></label>
-					<input type="text" style="border-color: black; border-radius: 4px" placeholder="Enter Username" name="uname" required>
-
-					<label for="psw"><b>Password</b></label>
-					<input type="password" style="width: 100%; border-color: none; border-radius: 4px;" placeholder="Enter Password" name="psw" required>
-
-					<button type="submit">Login</button>
-					<label>
-						<input type="checkbox" checked="checked" name="remember"> Remember me
-					</label>
-					<button type="button" style="background:; width: 80px;" class="cancelbtn">Cancel</button>
-					<span class="psw">Forgot <a href="#">password?</a></span>
-				</div>
-			</form>
-
-		</div>
-
-		<div style="margin-left: 30px">
-
-			<!-- stardevelop.com Live Help International Copyright - All Rights Reserved //-->
-			<a href="#" class="LiveHelpButton"><img src="Assets/images/chat.jpg" style="height: 200px; width: 200px" id="LiveHelpStatus" name="LiveHelpStatus" class="LiveHelpStatus" border="0" alt="Live Help" /></a>
-			<!-- END Live Help HTML Code - NOT PERMITTED TO MODIFY IMAGE MAP/CODE/LINKS //-->
-
-		</div>
-
-	</div>
-	<hr>
-
-
-
-
-
-	<div>
-		<h2>Don't have an account? sign up here 👉<button type="button" style="background: cyan; width: auto">Sign Up</button></h2>
-
-		<style>
-			body {
-				font-family: self deception regular;
-				margin: 50px;
-			}
-
-			h2 {
-				animation: move 3s;
-				-webkit-animation: move 5s;
-				animation-iteration-count: infinite;
-			}
-
-			@keyframes move {
-				from {
-					margin-left: 100%;
-					width: 300%; 
-				}
-
-				to {
-					margin-left: 0%;
-					width: 100%;
-				}
-			}
-
-			@-webkit-keyframes move {
-				from {
-					margin-left: 100%;
-					width: 300%; 
-				}
-
-				to {
-					margin-left: 0%;
-					width: 100%;
-				}
-			}
-
-		</style>
 
 		
-	</div>
-	<hr>
-
-	<footer id="footer">
-
-		<div class="short-links" style="float: left; text-align: center; width: 400px; height: 100%; color: white;font-family: century Gothic"> <h3>Quick Links</h3>	
-			<a class="nav-link" href="index.html">Home</a>
-			<a class="nav-link" href="about.html">About Us</a>
-			<a class="nav-link" href="#">Exchange Money</a>
-			<a class="nav-link" href="#">Tutorial</a>
-			<a class="nav-link" href="#">News</a>
-			<a class="nav-link" href="login.html">Login</a>
+	</footer>
 
 
-			<div class="container" style="color: white;"><h3>Follow Us</h3>
-				<div class="social links" style="">
-					<a class="social-links" href="#"><i class="fab fa-facebook"></i></a>
-					<a class="social-links" href="#"><i class="fab fa-instagram"></i></a>
-					<a class="social-links" href="#"><i class="fab fa-twitter"></i></a>
-					<a class="social-links" href="#"><i class="fab fa-linkedin"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="partners" style="color: white; width: 500px; height: 50px">	
-			<h3 style="font-family: century Gothic;">Our Partners</h3>
-			<div><img src="Assets/images/giz.jpeg" style="width: 150px; height: 80px;"></div><br>
-			<div><img src="Assets/images/div.jpeg" style="width: 150px; height: 80px;"></div>	
-
-		</div>
-
-
-
-		<div class="form" style="background-color: black; color: yellow">
-			<h3 style="color: white; text-align: center; font-family: century Gothic">CONTACT US</h3>
-			<div>
-				<form action="action_page.php">
-					<label for="fname">First Name</label>
-					<input type="text" id="fname"name="firstname" placeholder="Your name...">
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name...">
-					<label for="Email">Email</label>
-					<input type="text" id="Email"name="Email" placeholder="Your Email...">
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something..." style="height: 80px;"></textarea>
-					<input type="submit" value="Submit">
-				</form>	
-			</div>
-
-
-			<!-- <div class="footer" style="height:5px; color: black; text-align: left;">Copyright©2020-millitrade</div> -->
-		</footer>
-
-
-	</body>
-	</html>
+</body>
+</html>
